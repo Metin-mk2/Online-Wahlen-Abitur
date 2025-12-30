@@ -26,6 +26,7 @@ Zum Stoppen: `docker-compose down`.
 ## Funktionen
 
 - **Registrierung/Login:** Nutzer geben ihre Daten und einen Einschreibeschlüssel an (`anmeldung.html`).
+> HINWEIS: Bei der Anmeldung kann ein neuer Nutzer mit beliebigen Anmeldedaten erstellt werden. Dabei wird stets ein neuer Eintrag in der Datenbank angelegt. Dieselben Anmeldedaten können nicht erneut verwendet werden, da ein Nutzer nach der Stimmabgabe als bereits gewählt gilt. 
 - **Wahlvorgang:** Interaktive Auswahl von Erst- und Zweitstimme (`wahlen.html`).
 - **Auswertung:** Grafische Darstellung der Wahlergebnisse mittels Google Charts (`pie_chart.php`).
 
