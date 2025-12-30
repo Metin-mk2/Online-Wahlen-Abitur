@@ -1,5 +1,5 @@
 <?php 
-include 'database.php';
+include '../db/database.php';
 
 $erst_parteien = array("CSU", "SPD", "AfD", "FDP", "GRÜNE", "DIE LINKE", "FREIE WÄHLER", "ÖDP", "dieBasis");
 $ergebnis1[] = array('partei', 'Anzahl der Stimmen');
@@ -14,7 +14,7 @@ foreach ($erst_parteien as $erst_partei) {
         $ergebnis1[] = array($erst_partei, (int) $erst_stimmen);
     }
 }
-$zaehler1 = "SELECT COUNT(erststimme) FROM auszaehlug";
+$zaehler1 = "SELECT COUNT(erststimme) FROM auszaehlung";
 
 $zweit_parteien = array("CSU", "SPD", "AfD", "FDP", "GRÜNE", "DIE LINKE", "FREIE WÄHLER", "ÖDP", "dieBasis","Bündnis C","III. Weg","du.","LKR","Die Humanisten","Team Todenhöfer","UNABHÄNGIGE","Volt");
 $data2[] = array('partei', 'Anzahl der Stimmen');
@@ -38,7 +38,7 @@ $zaehler2 = "SELECT COUNT(zweitstimme) FROM auszaehlung";
         <meta charset="UTF-8">  <!-- An attribute to display the website on a display -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- // name = An area of the window in which web content can be seen ;content = Parameter which changes the width depending on the viewing device -->
         <title>Wahlen</title>  <!-- // Name of the website which is displayed on the chrome tab -->
-        <link rel="stylesheet" href="style_wahlen.css"  href="button.js"> <!--// The link tag defines the relationship between the current document and an external resource. It is most often used to link to external style sheets or to add a favicon to your website. -->
+        <link rel="stylesheet" href="../resources/css/style_wahlen.css"> 
 		<meta http-equiv="refresh" content="200">
     <script type="text/javascript" charset="UTF-8"></script></head>
 	
@@ -69,7 +69,7 @@ $zaehler2 = "SELECT COUNT(zweitstimme) FROM auszaehlung";
 						
 		            <div class="hover-underline-animation"> Gebärdensprache
 						<div class="headbar_img_gebärden">
-							<img src="IMG_0028.png" height="25px" width="25px"> 
+							<img src="../resources/img/IMG_0028.png" height="25px" width="25px"> 
 						</div>
 					</div>
 		            
@@ -79,7 +79,7 @@ $zaehler2 = "SELECT COUNT(zweitstimme) FROM auszaehlung";
 						
 					<div class="hover-underline-animation"> Leichte Sprache
 					<div class="headbar_img_leicht">
-						<img src="IMG_0029.png" height="25px" width="25px"> 
+						<img src="../resources/img/IMG_0029.png" height="25px" width="25px"> 
 					</div>	
 					</div>
 					
