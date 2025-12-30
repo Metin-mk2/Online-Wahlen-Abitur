@@ -19,7 +19,7 @@ if(isset($_POST['submit']))
 
     if ($resultCheck > 0){
         $_SESSION['einschreibeschluessel'] = $einschreibeschluessel;
-        header("Location: http://localhost:7882/online_wahlen/index.html");   
+        header("Location: index.html");   
     }
     else{
         $anmeldung="insert into register(vorname,nachname,email,stadt,plz,einschreibeschluessel) 

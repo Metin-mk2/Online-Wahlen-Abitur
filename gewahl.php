@@ -14,7 +14,7 @@ if(isset($_POST['wahl']))
 
     if(mysqli_query($verbindung,$wahl))
     {
-        header("Location: http://localhost:7882/online_wahlen/index.html");
+        header("Location: index.html");
 
     }
     else{
