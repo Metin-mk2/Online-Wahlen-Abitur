@@ -1,0 +1,227 @@
+*{
+    padding: 0%;
+    margin: 0%;
+	color: black;
+	
+} 
+.layer1 {
+	width: 100%;
+	height: 40px;
+	background-color: rgb(246,246,246);
+	position: absolute;
+
+}
+
+.headbar_link{
+	position: relative;
+	font-size: 1em;
+	text-align: right;
+	margin-right: 5%;
+	margin-top: 10px;
+	justify-content:center;
+
+		
+}
+
+a{
+    margin-left: 20px;
+}
+
+.headbar_img_leicht{
+	position: absolute;
+	right: 110px;
+	bottom: -8px;
+}
+
+.headbar_img_gebärden{
+	position: absolute;
+	right: 115px;
+	bottom: -8px;
+}
+
+
+/*-------------------------Layer 2-----------------------------------------*/
+
+.layer2{
+
+	width: 100%;
+	height: 135px;
+	bottom: 12px;
+	font-size: 1.65em;
+	background-color: white;
+	
+}
+
+.img{
+	
+	position: absolute;
+	width: 70px;
+	height: 60px;
+	right: 270px;
+	bottom: -15px;
+	background-image: url(IMG_0030.jpeg);
+	background-size:cover ;
+	
+}
+
+
+.title{
+	position: absolute;
+	margin-left: 160px;
+	margin-top: 75px;
+}
+
+/*------------------------Layer 3-----------------------------------------*/
+
+.layer3{
+	width: 100%;
+	height: 60px;
+	background-color: rgb(246,246,246);
+	margin-bottom: 4px;
+}
+
+
+.startseite{
+	position: relative;
+	font-weight: bold;
+	top: 20px;
+	margin-left: 30px;
+	
+}
+.startseite:hover{
+	text-decoration: underline;
+}
+
+/*----------Underline animation-----------*/
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+
+  
+
+ 
+}					/*übernommen und abgeändert aus https://www.30secondsofcode.org/css/s/hover-underline-animation*/
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  top: 28px;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/*           LAYER 4               */
+
+
+.main {
+    background-color: #FFFFFF;
+    width: 400px;
+    margin: 4em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.anmeldung {
+    padding-top: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.einschreibung {
+width: 75%;
+
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border-radius: 20px;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+form.form1 {
+    padding-top: 40px;
+}
+
+
+.submit {
+  cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #9C27B0, #E040FB);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.hilfe_anmeldung{
+  
+    position: relative;
+    color: black;
+    padding-top: 35px;
+    bottom: 10px;
+}
+
+a {
+
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+.hilfe{
+	position: relative;
+	top: 30px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+
+.deutscher_bundestag{
+	position: relative;
+	top: 80px;
+	margin-left: 30px;
+}
+
+
+.impressum{
+	position: relative;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 40px;
+}
+
+.impressum:hover > a{
+	text-decoration: underline;
+}
+
+.layer5{
+	background-color: rgb(246,246,246);
+}

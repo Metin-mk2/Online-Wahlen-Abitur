@@ -1,0 +1,354 @@
+*{
+    padding: 0%;
+    margin: 0%;
+	color: black;
+	
+}
+
+
+/*-------------------------Layer 1--------------------------------------------*/
+
+
+
+.layer1 {
+	width: 100%;
+	height: 40px;
+	background-color: rgb(246,246,246);
+	position: absolute;
+
+}
+
+.headbar_link{
+	position: relative;
+	font-size: 1em;
+	text-align: right;
+	margin-right: 5%;
+	margin-top: 10px;
+	justify-content:center;
+
+		
+}
+
+a{
+    margin-left: 20px;
+}
+
+.headbar_img_leicht{
+	position: absolute;
+	right: 110px;
+	bottom: -8px;
+}
+
+.headbar_img_gebärden{
+	position: absolute;
+	right: 115px;
+	bottom: -8px;
+}
+
+
+/*-------------------------Layer 2-----------------------------------------*/
+
+.layer2{
+
+	width: 100%;
+	height: 135px;
+	bottom: 12px;
+	font-size: 1.65em;
+	background-color: white;
+	
+}
+
+.img{
+	
+	position: absolute;
+	width: 70px;
+	height: 60px;
+	right: 270px;
+	bottom: -15px;
+	background-image: url(IMG_0030.jpeg);
+	background-size:cover ;
+	
+}
+
+
+.title{
+	position: absolute;
+	margin-left: 160px;
+	margin-top: 75px;
+}
+
+/*------------------------Layer 3-----------------------------------------*/
+
+.layer3{
+	width: 100%;
+	height: 60px;
+	background-color: rgb(246,246,246);
+	margin-bottom: 4px;
+}
+
+
+.startseite{
+	position: relative;
+	font-weight: bold;
+	top: 20px;
+	margin-left: 30px;
+	
+}
+.startseite:hover{
+	text-decoration: underline;
+}
+
+
+/*-----------------------Layer 4*-------------------------------------------*/
+
+.layer4{
+	width: 100%;
+	height: 100px;
+	background-color: rgb(246,246,246);
+	margin-bottom: 2px;
+}
+
+
+.aktuell{
+	position: relative;
+	margin-left: 15%;
+	font-size: 1.6em;
+	top: 30%;
+}
+
+.aktuell_linie{
+	position: relative;
+	border-top: 2px solid black;
+	width: 80px;
+	bottom: 40px;
+}
+
+
+
+/*----------------------Layer 5--------------------------------------------*/
+
+.layer5{
+	width: 100%;
+	height: 650px;
+	
+}
+
+/*---------grid-template-----------------------*/
+
+.grid{
+	background-color: white;
+	box-sizing: border-box;
+	display: grid; 
+	grid-template-columns: repeat(4, 24.7%);/*nicht 25% wegen den 4px gridgap*/
+	grid-gap: 4px;
+	grid-auto-flow: row dense;
+}
+.item {
+  background: rgb(246,246,246);
+  
+}
+
+.main_grid {
+  background: rgb(246,246,246);
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+  height: 650px;
+}
+
+.main_grid_ueberschrift{ 
+	position: relative;
+	font-weight: bold;
+	top: 20px;
+	left: 15px;
+	text-decoration: none;
+
+}
+
+
+.main_grid_link{
+	position: relative;
+	top: 30px;
+	left: 15px;
+	font-size: 1.8em;
+	
+	
+}
+
+
+
+.main_grid_link > a{
+	color: rgb(56,79,95);
+}
+
+.small_ueberschrift > a{
+	color: rgb(56,79,95);
+}
+
+
+@media only screen and (min-width: 1500px ){
+	.grid{
+		margin: auto;
+		width: 1100px;
+	}
+	.layer5{
+		background-color: rgb(246,246,244);
+	}	
+}
+
+/*Main Grid Text*/
+
+.main_grid_text{
+	position: relative;
+	margin-left: 18px;
+	margin-top: 40px;
+	font-size: 1em;
+	word-wrap: break-word;
+	width: 90%;
+}
+
+
+/*Main Grid Button*/
+
+.link_button{
+	position: relative;
+	margin-left: 70%;
+	margin-top: 9%;
+	
+}
+
+/*überschrift underline (hover)*/
+
+.main_grid:hover > .main_grid_link{
+	text-decoration: underline;
+}
+#small3:hover > .small_ueberschrift{
+	text-decoration: underline;
+}
+
+#small4:hover > .small_ueberschrift{
+	text-decoration: underline;
+}
+
+#small5:hover > .small_ueberschrift{
+	text-decoration: underline;
+}
+
+#small6:hover > .small_ueberschrift{
+	text-decoration: underline;
+}
+
+/*----------------resposible grid-----------------------*/
+
+@media only screen and (max-width: 980px ){
+	.grid > #small5{
+		display: none;
+	}
+	.grid > #small6{
+		display: none;
+		
+	}
+	.grid{
+		grid-template-columns: repeat(3,33%);
+	}
+	
+}
+
+
+@media only screen and (max-width: 670px ){
+	.grid > #small3{
+		display: none;
+	}
+	.grid > #small4{
+		display: none;
+		
+	}
+	.grid{
+		grid-template-columns: repeat(1, 100%);
+	}
+	
+}
+/**/
+
+.small_ueberschrift{
+	position: relative;
+	left: 15px;
+	top: 35px;
+	font-size: 1.25em;
+	word-wrap: break-word;
+	width: 80%;
+	
+}
+
+.small_ueberschrift > a{
+	margin-left: 0px;
+}
+
+.main_grid_link > a{
+	margin-left: 0px;
+}
+
+/*----------layer 6-----------*/
+/*----------Underline animation-----------*/
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+
+  
+
+ 
+}					
+
+/*übernommen und abgeändert aus https://www.30secondsofcode.org/css/s/hover-underline-animation*/
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  top: 28px;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+/*----------*/
+
+
+.hilfe{
+	position: relative;
+	top: 30px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+
+.deutscher_bundestag{
+	position: relative;
+	top: 80px;
+	margin-left: 30px;
+}
+
+
+.impressum{
+	position: relative;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 40px;
+}
+
+.impressum:hover > a{
+	text-decoration: underline;
+}
+
+
+
